@@ -41,7 +41,7 @@
 1. Где взять прошивки для модуля Zigbee?
 1. ZHA. Какую прошивку ставить?
 1. Установил zigbee2mqtt. Не работает веб страница zigbee2mqtt
-1. Ведение журнала отладки Zigbee herdsman. Как получить лог Zigbee herdsman?
+1. [Ведение журнала отладки Zigbee herdsman. Как получить лог Zigbee herdsman?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/zigbee/how-to-get-the-zigbee-herdsman-log.md#ведение-журнала-отладки-zigbee-herdsman-как-получить-лог-zigbee-herdsman)
 1. Как шлюз перевести в режим роутера или в режим координатора?
 1. Устройства Zigbee часто отваливаются
 1. Чем отличается Erase PDM от Soft reset?
