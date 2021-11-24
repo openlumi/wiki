@@ -1,3 +1,4 @@
+# Как обновить шлюз прошивкой squashfs sysupgrade.bin?
 
 Скачайте [образ](https://openlumi.github.io/releases/21.02.1/targets/imx6/generic/) xxxx-squashfs-sysupgrade.bin c добавленными фидами для своего шлюза и обновите через LuCI. 
 * Для шлюза Aqara ZHWG11LM 
