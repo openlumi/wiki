@@ -5,7 +5,7 @@
 <details>
   <summary><b>FAQ Общее</b></summary>
 
-1. В чем разница между Aqara ZHWG11LM и Xiaomi DGNWG05LM?
+1. [В чем разница между Aqara ZHWG11LM и Xiaomi DGNWG05LM?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/aqara_zhwg11lm_and_xiaomi_dgnwg05lm.md)
 1. Какой шлюз я могу взять, чтобы залить OpenWRT?
 1. Как сделать сброс шлюза до заводского состояния?
 1. Если сбросил шлюз к заводским настройкам, нужно ли делать Erase PDM?
