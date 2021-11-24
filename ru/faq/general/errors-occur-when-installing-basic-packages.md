@@ -20,7 +20,8 @@ Collected errors:
 * Для шлюза Xiaomi DGNWG05LM 
 `openlumi-21.02.1-imx6-xiaomi_dgnwg05lm-squashfs-sysupgrade.bin`
 
-![image](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/squashfs-sysupgrade.bin.jpg)
+![image](https://user-images.githubusercontent.com/64090632/143293816-e4590f00-f813-4bf1-a4d7-95f72c0a8364.png)
+
 
 System => Backup/Flash Firmware
 ![image](https://user-images.githubusercontent.com/64090632/141359903-58c2f4ac-5078-4927-86e1-619a49d883fd.png)
