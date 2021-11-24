@@ -2,6 +2,9 @@
 
 [Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
+
+> Важно! Home Assistant на шлюзе находится по этому адресу `/etc/homeassistant/`
+
 # HASS Configurator
 ![image](https://user-images.githubusercontent.com/64090632/143304702-066fde6b-a82c-4d29-b10c-f4ae28feeb06.png)
 
