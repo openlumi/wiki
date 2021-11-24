@@ -26,7 +26,10 @@ MQTT мост позволяет соединить два или более MQT
 ## Вариант 1. Схема настройки MQTT моста
 
 **Пример настройки MQTT bridge для шлюза под номером 1 (AqaraGate01). Который будет передавать топики на главный сервер, но при этом мы не подключаемся к шлюзу под номером 2 (AqaraGate02)**
-![Вариант 1. Схема настройки MQTT моста](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/MQTT%20Bridge%20diagram%2001.jpg)
+
+![image](https://user-images.githubusercontent.com/64090632/143300309-f84e2657-e7fc-4f79-95af-f77b4392f059.png)
+
+
 ```
 # MQTT Bridge AqaraGate01
 # MQTT Bridge 1. Подключение к NAS Home Assistant
@@ -80,7 +83,7 @@ topic # both 0 "" ""
 ```
 ## Вариант 2. Схема настройки MQTT моста
 
-![Вариант 2. Схема настройки MQTT моста](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/MQTT%20Bridge%20diagram%2002.jpg)
+
 
 Шлюзы по умолчанию подключаются к MQTT брокеру на главном Home Assistant, но если по какой-то причине главный Home Assistant будет выключен или аддон MQTT брокер на главном Home Assistant будет выключен, то шлюзы переключатся друг на друга и будут общаться между собой
 
