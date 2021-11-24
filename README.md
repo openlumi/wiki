@@ -37,7 +37,7 @@
   <summary><b>FAQ Zigbee</b></summary>
 
 
-1. Какие устройства zigbee я могу добавить в шлюз?
+1. [Какие устройства zigbee я могу добавить в шлюз?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/zigbee/which-zigbee-devices-can-i-add-to-the-gateway.md)
 1. Где взять прошивки для модуля Zigbee?
 1. ZHA. Какую прошивку ставить?
 1. Установил zigbee2mqtt. Не работает веб страница zigbee2mqtt
