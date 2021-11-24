@@ -12,7 +12,8 @@
 
 1) **Ставим пакет davfs2 через LuCI. System => Software**
 
-![OpenWRT WebDav](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/webdav_install.JPG)
+![image](https://user-images.githubusercontent.com/64090632/143297954-947dd2e1-2731-4165-9779-e5f062bea013.png)
+
 
 
 ***
@@ -22,7 +23,9 @@
 
 "Пароли и авторизация" > "Пароли приложений" > "Создать новый пароль" > "Создать пароль приложения" > "Файлы WebDAW". Пишем толковое и понятное название нового пароля. 
 > **Важно! Один пароль для одного соединения. Обозвали, "Создать". Вводите пароль от почтового ящика и обязательно копируете выданный пароль куда-то. Он будет работать, но вы его больше не увидите.**
-![passport yandex](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/passport_yandex.jpg)
+
+![image](https://user-images.githubusercontent.com/64090632/143298185-a5ab86eb-89ea-41f2-a048-86e294d389ff.png)
+
 
 ***
 **3) Теперь копируете следующие команды и меняете в них `login` на логин диска и `password` на выданный выше пароль приложения.**
@@ -53,7 +56,8 @@ mount.davfs https://webdav.yandex.ru /mnt/yandex_webdav
 ```
 df -h
 ```
-![console webdav](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/console_webdav.JPG)
+![image](https://user-images.githubusercontent.com/64090632/143298078-e11027ca-de9b-430b-8d79-dd826066af1d.png)
+
 
 
 ## Резервное копирование
@@ -194,7 +198,8 @@ df -h /mnt/yandex_webdav
 ```
 Если успех, то увидите примонтированный диск `yandex_webdav`
 
-![console webdav](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/console_webdav.JPG)
+![image](https://user-images.githubusercontent.com/64090632/143298279-0bab79a6-eb8c-4386-b283-d3efbe435f24.png)
+
 
 ***
 
