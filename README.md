@@ -40,7 +40,7 @@
 1. [Какие устройства zigbee я могу добавить в шлюз?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/zigbee/which-zigbee-devices-can-i-add-to-the-gateway.md)
 1. [Где взять прошивки для модуля Zigbee?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/zigbee/where-can-i-get-the-firmware-for-the-zigbee-module.md#где-взять-прошивки-для-модуля-zigbee)
 1. [ZHA. Какую прошивку ставить?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/zigbee/zha-what-firmware-should-i-install.md#zha-какую-прошивку-ставить)
-1. Установил zigbee2mqtt. Не работает веб страница zigbee2mqtt
+1. [Установил zigbee2mqtt. Не работает веб страница zigbee2mqtt](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/zigbee/zigbee2mqtt-web-page-does-not-work.md#установил-zigbee2mqtt-не-работает-веб-страница-zigbee2mqtt)
 1. [Ведение журнала отладки Zigbee herdsman. Как получить лог Zigbee herdsman?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/zigbee/how-to-get-the-zigbee-herdsman-log.md#ведение-журнала-отладки-zigbee-herdsman-как-получить-лог-zigbee-herdsman)
 1. [Как шлюз перевести в режим роутера или в режим координатора?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/zigbee/router-or-coordinator-mode.md#как-шлюз-перевести-в-режим-роутера-или-в-режим-координатора)
 1. [Устройства Zigbee часто отваливаются](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/zigbee/zigbee-devices-often-fall-off.md#устройства-zigbee-часто-отваливаются)
