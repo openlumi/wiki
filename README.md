@@ -27,7 +27,7 @@
 1. [Как установить и настроить mosquitto? Зачем это нужно?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/mqtt/how-do-i-install-and-configure-mosquito.md#как-установить-и-настроить-mosquitto-зачем-это-нужно)
 1. [Установил mosquitto, а подключиться через MQTT Explorer к mqtt не могу](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/mqtt/i-installed-mosquito-but-i-cant-connect-to-mqtt-explorer.md#установил-mosquitto-а-подключиться-через-mqtt-explorer-к-mqtt-не-могу)
 1. [Как настроить mqtt мост?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/mqtt/mqtt-bridge.md#mqtt-мост)
-1. MQTT LWT последнее состояние
+1. [MQTT LWT последнее состояние](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/mqtt/mqtt-lwt-latest-state.md#mqtt-lwt-последнее-состояние)
 
 
 </details>
