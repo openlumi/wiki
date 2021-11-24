@@ -20,7 +20,8 @@
 >   * mosquitto-nossl (без поддержки SSL)
 >   * mosquitto-ssl (обеспечивает поддержку SSL для зашифрованных сетевых подключений и аутентификации. Требуется использовать сертификат). Подробнее про mosquitto-ssl читаем [здесь](https://mosquitto.org/man/mosquitto-tls-7.html)
 
-![mosquitto](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/install%20mosquitto%20red.jpg)
+![image](https://user-images.githubusercontent.com/64090632/143299517-4ea4e58e-8930-4718-85c2-71db66499aad.png)
+
 
 После установки mosquitto, в папке /etc появится папка mosquitto, где есть конфигурационный файлик mosquitto.conf. 
 
