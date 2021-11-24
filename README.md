@@ -23,7 +23,7 @@
   <summary><b>FAQ MQTT</b></summary>
 
 
-1. Как я могу пробросить устройства на внешний умный дом?
+1. [Как я могу пробросить устройства на внешний умный дом?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/mqtt/how-can-i-transfer-devices-to-an-external-smarthome.md#как-я-могу-пробросить-устройства-на-внешний-умный-дом)
 1. Как установить и настроить mosquitto? Зачем это нужно?
 1. Установил mosquitto, а подключиться через MQTT Explorer к mqtt не могу
 1. Как настроить mqtt мост?
