@@ -140,7 +140,8 @@ pip install PyXiaomiGateway==0.13.4
 Запустите `htop` в консоли (просто указываем htop), а только после этого в Home Assistant запускайте установку интеграции. В утилите `htop` следите за процессом. Нужно смотреть долго и внимательно, нас должна привлечь внимание строка `pip install --quiet`
 
 Пример запуска интеграции WLED через Home Assistant  
-![install wled](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/pip%20install%20wled.jpg)
+![image](https://user-images.githubusercontent.com/64090632/143303268-0ab0addf-3f97-46b7-a347-637dba31845c.png)
+
 
 Здесь мы видим, что идет попытка установить пакет wled==0.8.0, соответственно, рекомендую остановить Home Assistant через LuCI, System => Startup, чтобы Home Assistant не пытался установить нужный пакет и шлюз при этом не завис. Ставим пакет нужный пакет, запускаем Home Assistant и запускаем интеграцию.  
 
