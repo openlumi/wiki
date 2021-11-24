@@ -7,7 +7,7 @@
 
 1. [В чем разница между Aqara ZHWG11LM и Xiaomi DGNWG05LM?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/aqara-zhwg11lm-and-xiaomi-dgnwg05lm.md)
 1. Какой шлюз я могу взять, чтобы залить OpenWRT?
-1. Как сделать сброс шлюза до заводского состояния?
+1. [Как сделать сброс шлюза до заводского состояния?] (https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/how-do-i-reset-the-gateway-to-the-factory-state.md)
 1. Если сбросил шлюз к заводским настройкам, нужно ли делать Erase PDM?
 1. При установке базовых пакетов возникают ошибки
 1. У меня не ставятся пакеты или установились не все пакеты
