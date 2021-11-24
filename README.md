@@ -9,7 +9,7 @@
 1. [Какой шлюз я могу взять, чтобы залить OpenWRT?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/which-gateway-can-i-use-to-flood-openwrt.md)
 1. [Как сделать сброс шлюза до заводского состояния?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/how-do-i-reset-the-gateway-to-the-factory-state.md)
 1. [Если сбросил шлюз к заводским настройкам, нужно ли делать Erase PDM?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/reset-the-gateway-to-factory-settings.md)
-1. При установке базовых пакетов возникают ошибки
+1. [При установке базовых пакетов возникают ошибки](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/errors-occur-when-installing-basic-packages.md)
 1. У меня не ставятся пакеты или установились не все пакеты
 1. Как настроить Music Player Daemon?
 1. Как настроить lumimqtt?
