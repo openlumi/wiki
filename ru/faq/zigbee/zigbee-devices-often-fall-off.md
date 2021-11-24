@@ -5,7 +5,8 @@
 **Если вы наблюдаете, что устройства zigbee работают не корректно и отваливаются, то можете пойти двумя путями**
 
 1. Самый простой вариант и действующий, это нажать на кнопку Erase PDM. Про Erase PDM читаем [здесь](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/wiki/Если-сбросил-шлюз-к-заводским-настройкам,-нужно-ли-делать-Erase-PDM%3F)
-![Erase PDM](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/Erase%20PDM.jpg)
+![Erase PDM](https://user-images.githubusercontent.com/64090632/143302697-ca73e53f-b40e-4ea8-ab31-5051442d1c8a.jpg)
+
 
 1. Проверить батарейки, возможно батарейки уже дохлые
 
