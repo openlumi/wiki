@@ -27,7 +27,7 @@ MQTT мост позволяет соединить два или более MQT
 
 **Пример настройки MQTT bridge для шлюза под номером 1 (AqaraGate01). Который будет передавать топики на главный сервер, но при этом мы не подключаемся к шлюзу под номером 2 (AqaraGate02)**
 
-![image](https://user-images.githubusercontent.com/64090632/143300309-f84e2657-e7fc-4f79-95af-f77b4392f059.png)
+![MQTT Bridge diagram 01](https://user-images.githubusercontent.com/64090632/143300496-d020b570-b366-4c13-9de8-36cc349e4f6b.jpg)
 
 
 ```
@@ -83,6 +83,7 @@ topic # both 0 "" ""
 ```
 ## Вариант 2. Схема настройки MQTT моста
 
+![MQTT Bridge diagram 02](https://user-images.githubusercontent.com/64090632/143300459-3d3b7c50-d084-4835-9351-c7b50ef27237.jpg)
 
 
 Шлюзы по умолчанию подключаются к MQTT брокеру на главном Home Assistant, но если по какой-то причине главный Home Assistant будет выключен или аддон MQTT брокер на главном Home Assistant будет выключен, то шлюзы переключатся друг на друга и будут общаться между собой
