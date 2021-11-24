@@ -4,7 +4,7 @@
 
 Это легкая альтернатива HACS и данная интеграция [Updater](https://github.com/AlexxIT/Updater) позволит загрузить необходимую интеграцию или обновить установленную интеграцию, которые указаны в файлике `updater.txt`
 
-![Integration version](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/integration_version.JPG)
+![integration_version](https://user-images.githubusercontent.com/64090632/143305565-a21a6014-67c3-4a4a-9b3c-d9eb6f8470b4.JPG)
 
 
 1) Создаем в `configuration.yaml` или, если у вас настроен packages, то просто закидываем в packages. Про удобную конфигурацию читаем [здесь](https://sprut.ai/client/blog/3180)
@@ -126,7 +126,7 @@ sensor:
 
 ```
 
-
+[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 ## Источники
 * [Интеграция Updater](https://github.com/AlexxIT/Updater)
