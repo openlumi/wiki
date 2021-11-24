@@ -92,7 +92,7 @@ mode: single
 icon: mdi:database-sync
 ```
 
-
+[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 
 ## Источники
