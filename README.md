@@ -15,7 +15,7 @@
 1. Как настроить lumimqtt?
 1. Как обновить версию OpenWRT с 21.02 до .... ?
 1. Подключаем Яндекс диск (Webdav)
-1. Как обновить шлюз прошивкой squashfs sysupgrade.bin?
+1. [Как обновить шлюз прошивкой squashfs sysupgrade.bin?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/how-to-update-the-gateway-with-squashfs-sysupgrade-firmware-bin.md)
 
 </details>
 
