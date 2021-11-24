@@ -60,7 +60,7 @@
 1. [Как установить интеграцию HASS Configurator?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/how-do-i-install-hass-configurator-integration.md#как-установить-интеграцию-hass-configurator)
 1. [Как добавить интеграцию TTS Яндекс](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/how-to-add-yandex-tts-integration.md#как-добавить-интеграцию-tts-яндекс)
 1. [Альтернатива HACS. Загружаем или обновляем интеграции автоматически](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/alternative-hacs.md#альтернатива-hacs-загружаем-или-обновляем-интеграции-автоматически)
-1. Мониторинг папок для бэкапа и не только
+1. [Мониторинг папок для бэкапа и не только](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/monitoring-folders-for-backup-and-not-only.md#мониторинг-папок-для-бэкапа-и-не-только)
 
 
 </details>
