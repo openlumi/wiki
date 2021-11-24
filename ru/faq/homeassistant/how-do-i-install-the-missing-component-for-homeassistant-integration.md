@@ -154,6 +154,8 @@ pip install PyXiaomiGateway==0.13.4
 * Удаляем пакет PyXiaomiGateway `pip uninstall PyXiaomiGateway`
 
 
+[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
+
 ## Литература
 * [pip documentation](https://pip.pypa.io/en/stable/)
 * [pip_install](https://pip.pypa.io/en/stable/cli/pip_install/)
