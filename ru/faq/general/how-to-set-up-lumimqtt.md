@@ -10,7 +10,7 @@
 1. Установить найденный пакет lumimqtt
 1. Установить на шлюз mosquitto (lumimqtt будет смотреть на локальный MQTT)
 
-![lumimqtt](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/install-lumimqtt.jpg)
+![image](https://user-images.githubusercontent.com/64090632/143296983-40d8fa45-3d78-4faa-9317-1b8f20c0f03e.png)
 
 Создаем файлик lumimqtt.json в папке /etc
 ```
@@ -40,4 +40,5 @@ nano /etc/lumimqtt.json
 
 Перезагружаем шлюз и после в Home Assistant появится управление подсветкой шлюза
 
-![Gateway Home Assistant](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/Gateway%20Home%20Assistant.jpg)
+![image](https://user-images.githubusercontent.com/64090632/143297030-8f045487-531e-4716-972d-e90b889c3f2d.png)
+
