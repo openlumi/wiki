@@ -1,5 +1,7 @@
 # Как обновить шлюз прошивкой squashfs sysupgrade.bin?
 
+[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
+
 Скачайте [образ](https://openlumi.github.io/releases/21.02.1/targets/imx6/generic/) xxxx-squashfs-sysupgrade.bin c добавленными фидами для своего шлюза и обновите через LuCI. 
 * Для шлюза Aqara ZHWG11LM 
 `openlumi-21.02.1-imx6-aqara_zhwg11lm-squashfs-sysupgrade.bin`
@@ -16,3 +18,5 @@ System => Backup/Flash Firmware
 * Если поставить галочку "Keep setting and retain the current configuration", то все настройки будут сохранены
 ![image](https://user-images.githubusercontent.com/64090632/143253024-c49dd612-6e0c-48cb-a0b8-8c1a6c1254db.png)
 
+
+[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
