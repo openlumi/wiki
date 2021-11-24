@@ -11,7 +11,7 @@
 1. [Если сбросил шлюз к заводским настройкам, нужно ли делать Erase PDM?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/reset-the-gateway-to-factory-settings.md)
 1. [При установке базовых пакетов возникают ошибки](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/errors-occur-when-installing-basic-packages.md#при-установке-базовых-пакетов-возникают-ошибки)
 1. [У меня не ставятся пакеты или установились не все пакеты](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/packages-are-not-placed.md#у-меня-не-ставятся-пакеты-или-установились-не-все-пакеты)
-1. [Как настроить Music Player Daemon?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/how_do_i_set_up_music_player_daemon.md#как-настроить-music-player-daemon)
+1. [Как настроить Music Player Daemon?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/how-do-i-set-up-music-player-daemon.md#как-настроить-music-player-daemon)
 1. Как настроить lumimqtt?
 1. Как обновить версию OpenWRT с 21.02 до .... ?
 1. Подключаем Яндекс диск (Webdav)
