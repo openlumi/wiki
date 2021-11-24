@@ -14,7 +14,7 @@
 1. [Как настроить Music Player Daemon?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/how-do-i-set-up-music-player-daemon.md#как-настроить-music-player-daemon)
 1. [Как настроить lumimqtt?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/how-to-set-up-lumimqtt.md#как-настроить-lumimqtt)
 1. [Как обновить версию OpenWRT с 21.02 до .... ?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/how-to-update-the-openwrt.md#как-обновить-версию-openwrt-с-2102-до--)
-1. Подключаем Яндекс диск (Webdav)
+1. [Подключаем Яндекс диск (Webdav)](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/connecting-yandex-disk.md#подключаем-яндекс-диск-webdav)
 1. [Как обновить шлюз прошивкой squashfs sysupgrade.bin?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/how-to-update-the-gateway-with-squashfs-sysupgrade-firmware-bin.md)
 
 </details>
