@@ -55,7 +55,7 @@
   <summary><b>FAQ HomeAssistant</b></summary>
 
 1. Cкрипты для установки и удаления Home Assistant, а также создания бэкапа находятся [здесь](https://github.com/DivanX10/OpenWRT-and-Home-Assistant)
-1. Как установить недостающий компонент для интеграции Home Assistant?
+1. [Как установить недостающий компонент для интеграции Home Assistant?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/how-do-i-install-the-missing-component-for-homeassistant-integration.md#как-установить-недостающий-компонент-для-интеграции-home-assistant)
 1. Как установить интеграцию Passive BLE Monitor?
 1. Как установить интеграцию HASS Configurator?
 1. Как добавить интеграцию TTS Яндекс
