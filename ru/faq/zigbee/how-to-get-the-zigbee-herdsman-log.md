@@ -48,4 +48,4 @@ ZIGBEE2MQTT_DATA=/etc/zigbee2mqtt/ DEBUG=zigbee-herdsman* node /opt/zigbee2mqtt/
 
 
 ## Источник
-Дополнительная информация про [Zigbee-herdsman debug logging](https://www.zigbee2mqtt.io/guide/usage/debug.html#enabling-logging)
+Дополнительная информация про [Zigbee-herdsman debug logging](https://www.zigbee2mqtt.io/guide/usage/debug.html#enabling-logging){:target="_blank"}
