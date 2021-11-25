@@ -1,6 +1,5 @@
 # Мониторинг папок для бэкапа и не только
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 С помощью интеграции [Folder Watcher](https://www.home-assistant.io/integrations/folder_watcher) можно мониторить файловую систему и следить за событием, такие как создание/удаление/изменение файлов в настроенных папках.
 
@@ -91,8 +90,6 @@ sequence:
 mode: single
 icon: mdi:database-sync
 ```
-
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 
 ## Источники

@@ -1,6 +1,5 @@
 # В чем разница между Aqara ZHWG11LM и Xiaomi DGNWG05LM?
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 ## Внешний вид
 
@@ -52,7 +51,6 @@
 * Продается в комплекте с датчиками
 * Нет поддержки Apple HomeKit
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 ## Статьи
 * [Шлюз Aqara Hub, взаимодействие устройств в экосистеме умного дома Xiaomi](https://www.ixbt.com/live/chome/shlyuz-aqara-hub-vzaimodeystvie-ustroystv-v-ekosisteme-umnogo-doma-xiaomi.html)

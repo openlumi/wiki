@@ -1,7 +1,5 @@
 # Как настроить Music Player Daemon?
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
-
 Можете посмотреть [видеомануал](https://youtu.be/ur4laA1UsbI) на моем канале "Умный дом с Диваном"
 
 

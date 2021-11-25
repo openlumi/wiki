@@ -1,6 +1,5 @@
 # Установил zigbee2mqtt. Не работает веб страница zigbee2mqtt
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 ## Если установили zigbee2mqtt и веб страница zigbee2mqtt не открывается, то возможно проблема в следующем
 

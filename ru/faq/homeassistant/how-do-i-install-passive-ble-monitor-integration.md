@@ -1,7 +1,5 @@
 # Как установить интеграцию Passive BLE Monitor?
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
-
 > Важно! Home Assistant на шлюзе находится по этому адресу `/etc/homeassistant/`
 
 ### Внимание. Интеграция [Passive BLE Monitor](https://github.com/custom-components/ble_monitor) будет работать только на шлюзе Xiaomi DGNWG05LM со встроенным bluetooth. У Aqara ZHWG11LM нет встроенного bluetooth!

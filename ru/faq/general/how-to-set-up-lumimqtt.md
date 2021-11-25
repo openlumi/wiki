@@ -1,7 +1,5 @@
 # Как настроить lumimqtt?
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
-
 Для управления подсветкой шлюза необходимо установить lumimqtt. Читаем подробно про lumimqtt [здесь](https://github.com/openlumi/lumimqtt)
 
 Установить пакет lumimqtt через LuCI. Делаем как на скриншоте.

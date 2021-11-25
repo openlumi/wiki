@@ -1,6 +1,5 @@
 # Чем отличается Erase PDM от Soft reset?
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 **Erase PDM** - стирает флеш-память модуля zigbee полностью
 

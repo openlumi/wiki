@@ -1,7 +1,5 @@
 # Как сделать сброс шлюза до заводского состояния?
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
-
 ## Важно!
 > В стоковой прошивке производитель Xiaomi использует софтверный MAC адрес, а физический MAC адрес скрыт. Когда вы установите на шлюз OpenWRT, то у нас будет отображаться физический MAC адрес и на роутере будет отображаться уже другой MAC адрес и IP адрес.
 
@@ -43,5 +41,3 @@ rm -rf /overlay/upper/.* /overlay/upper/* && reboot
 Переходим на страницу бэкапа и прошивки System => Backup / Flash Firmware. Нажимаем на кнопку Reset to defaults
 
 ![Reset to defaults](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/reset%20to%20defaults.jpg)
-
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)

@@ -1,7 +1,5 @@
 # Как установить интеграцию HASS Configurator?
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
-
 
 > Важно! Home Assistant на шлюзе находится по этому адресу `/etc/homeassistant/`
 
@@ -174,8 +172,6 @@ pip show hass-configurator
 
 > Надо скопировать в папку components интеграцию panel_iframe. Если не знаете как это сделать, то читаем Как установить недостающий компонент для интеграции Home Assistant?
 
-
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 ***
 

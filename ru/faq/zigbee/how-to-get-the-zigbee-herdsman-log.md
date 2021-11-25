@@ -1,6 +1,5 @@
 # Ведение журнала отладки Zigbee herdsman. Как получить лог zigbee herdsman?
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 Делать нужно через консоль.
 

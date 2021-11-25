@@ -1,7 +1,5 @@
 # Как установить недостающий компонент для интеграции Home Assistant?
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
-
 ## Вступление
 
 Установка зависимых пакетов процедура не сложная, но требует понимания, а также обязательно нужно посещать сайт [pypi.org](https://pypi.org) для уточнения. Не все пакеты ставятся через консоль `pip install` и некоторые пакеты требуют предварительно скомпилированные библиотеки, такие пакеты ставятся через LuCI, через менеджер пакетов. Некоторые интеграции нужно расскомментировать через config_flows.py. Также интеграции можно закидывать в папку `custom_components`, туда же будут закидываться пользовательские интеграции 
@@ -153,8 +151,6 @@ pip install PyXiaomiGateway==0.13.4
 * Удаляем пакет wled `pip uninstall wled`
 * Удаляем пакет PyXiaomiGateway `pip uninstall PyXiaomiGateway`
 
-
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 ## Литература
 * [pip documentation](https://pip.pypa.io/en/stable/)

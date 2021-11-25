@@ -1,7 +1,5 @@
 # Альтернатива HACS. Загружаем или обновляем интеграции автоматически
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
-
 Это легкая альтернатива HACS и данная интеграция [Updater](https://github.com/AlexxIT/Updater) позволит загрузить необходимую интеграцию или обновить установленную интеграцию, которые указаны в файлике `updater.txt`
 
 ![integration_version](https://user-images.githubusercontent.com/64090632/143305565-a21a6014-67c3-4a4a-9b3c-d9eb6f8470b4.JPG)
@@ -126,7 +124,6 @@ sensor:
 
 ```
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
 
 ## Источники
 * [Интеграция Updater](https://github.com/AlexxIT/Updater)

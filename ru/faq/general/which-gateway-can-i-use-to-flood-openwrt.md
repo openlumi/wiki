@@ -1,7 +1,5 @@
 # Какой шлюз я могу взять, чтобы залить OpenWRT?
 
-[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
-
 Залить OpenWRT можно только на эти шлюзы
 
 1. Xiaomi DGNWG05LM
