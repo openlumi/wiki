@@ -29,6 +29,7 @@ Last Will and Testament feature of MQTT, что в переводе "После�
 Пример сенсора, который следит за MQTT Broker и за Home Assistant. Это нужно для автоматизации. Если шлюз будет обесточен и оба сенсора будут иметь значение off, то будет статус "Выключен". В таком случае сработает триггер и отправится топик, который выставит статус MQTT брокера в offline и тогда Home Assistant отобразит, что девайсы не доступны. Как настроить работу RESTFull сенсора и как работает автоматизация, читаем [здесь](https://zen.yandex.ru/media/id/5f5bea45267c75477b342dab/rezerviruem-servery-home-assistant-6037f38bd4391d5d927ee7d5)
 
 ```
+{% raw %}
 binary_sensor:
   - platform: mqtt
     name: "MQTT Broker connection GateLivingRoom"
@@ -70,7 +71,7 @@ sensor:
         attribute_templates:
           MQTT Broker: "{{ states('binary_sensor.mqtt_broker_connection_gatelivingroom') }}"
           Ping: "{{ states('binary_sensor.rest_ping_gatelivingroom') }}"
-
+{% endraw %}
 ```
 
 ### Автоматизация
