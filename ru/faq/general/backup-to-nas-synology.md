@@ -6,7 +6,7 @@
 
 1) Ставим пакет `cifsmount` через LuCI
 
-![cifsmount](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/install%20cifs.JPG)
+![install cifs](https://user-images.githubusercontent.com/64090632/143661473-4120f8a3-15e3-4dd0-ab13-c92cff6f9828.JPG)
 
 
 2) Создадим папку `backup` куда мы примонтируем сетевую папку NAS
@@ -53,7 +53,7 @@ tar cvz -f /mnt/nas/backup/backup_gw-$(date +%d-%m-20%y_%H-%M).tar.gz -C /overla
 
 **Выборочный бэкап**
 
-Данный вариант можно использовать для запуска бэкапа с Home Assistant. Читаем инструкцию [мониторинг папок для бэкапа и не только](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/wiki/Мониторинг-папок-для-бэкапа-и-не-только)
+Данный вариант можно использовать для запуска бэкапа с Home Assistant. Читаем инструкцию [мониторинг папок для бэкапа и не только](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/monitoring-folders-for-backup-and-not-only.md#мониторинг-папок-для-бэкапа-и-не-только)
 
 > Важно! Примеры не являются эталонными. Папку можно создать в любом месте, скрипт также можно размещать в любом месте, главное правильно прописать путь к файлу
 
@@ -171,3 +171,6 @@ df -h
 ```
 
 [Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
+
+
+
