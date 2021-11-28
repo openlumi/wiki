@@ -6,7 +6,8 @@
 
 Для работы данной интеграции необходимо установить пакет `python3-psutil`. Данный пакет ставим через LuCI
 
-![python3-psutil](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/install%20python3-psutil.jpg)
+![system monitor](https://user-images.githubusercontent.com/64090632/143778872-c7667101-4d39-4c3e-aeda-61a1a5ab41e9.JPG)
+
 
 ***
 
