@@ -315,6 +315,11 @@ entities:
 
 ## Как запустить в OS Home Assistant клиент NUT
 
+Если попытаетесь в OS Home Assistant, через SSH запустить `upsc ups@192.168.1.200`, то получите подобное сообщение, что такого клиента нет, а также не получится установить nut клиент
+
+![image](https://user-images.githubusercontent.com/64090632/143955324-e4043897-5ee1-47ac-80e4-7dee64431a58.png)
+
+
 
 
 
