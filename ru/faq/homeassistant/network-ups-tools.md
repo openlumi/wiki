@@ -313,6 +313,7 @@ entities:
 
 ```
 
+## Как запустить в OS Home Assistant клиент NUT
 
 
 
