@@ -8,9 +8,56 @@
 
 
 
+## Панель управления
+Данную карточку для ИБП я создал с использованием двух пользовательских интеграции
+* [multiple entity row](https://github.com/benct/lovelace-multiple-entity-row)
+* [fold entity row](https://github.com/thomasloven/lovelace-fold-entity-row)
+
+
+![image](https://user-images.githubusercontent.com/64090632/143938920-71b7df88-6f34-46a8-b82b-7cf7966b98ae.png)
+
+```
+type: entities
+entities:
+  - type: custom:fold-entity-row
+    head:
+      entity: sensor.ups_cyberpower_livingroom
+      name: ИБП
+      type: custom:multiple-entity-row
+      secondary_info:
+        attribute: Уровень заряда
+        name: Батарея
+        unit: '%'
+      state_header: Статус
+      entities:
+        - entity: group.livingroom_ups
+          name: Сенсоры
+          icon: mdi:information-outline
+        - entity: sensor.ups_load
+          name: Нагрузка
+        - entity: sensor.ups_load_watts
+          name: Нагрузка
+    entities:
+      - entity: switch.ups_beeper
+        secondary_info: last-changed
+        icon: mdi:volume-high
+      - entity: switch.ups_test_battery_quick
+        secondary_info: last-changed
+        icon: mdi:battery
+      - entity: switch.ups_test_battery_deep
+        secondary_info: last-changed
+        icon: mdi:battery
+
+```
+
+
+
 
 ## Источники
 * [Network UPS Tools](https://networkupstools.org)
 * [Network UPS Tools Developer Guide](https://networkupstools.org/docs/developer-guide.chunked/index.html)
 * [Home Assistant. Network UPS Tools](https://www.home-assistant.io/integrations/nut/)
 * [Home Assistant. Command line Switch](https://www.home-assistant.io/integrations/switch.command_line/)
+* [Home Assistant. multiple entity row](https://github.com/benct/lovelace-multiple-entity-row)
+* [Home Assistant. fold entity row](https://github.com/thomasloven/lovelace-fold-entity-row)
+* [Home Assistant. Group](https://www.home-assistant.io/integrations/group/)
