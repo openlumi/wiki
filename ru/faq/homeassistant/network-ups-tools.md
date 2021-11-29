@@ -133,17 +133,106 @@ upsc ups@192.168.1.200 ups.beeper.status
 ```
 reboot
 ```
-**5)** Ставим интеграцию **Network UPS Tools** и указываем IP адрес к серверу ИБП. Логин и пароль можно не указывать и без него пускает, елси не пустит, то указывайте ту УЗ, которую прописали в `upsd.users` 
+**5)** Ставим интеграцию **Network UPS Tools** и указываем IP адрес к серверу ИБП. Логин и пароль можно не указывать и без него пускает, если не пустит, то указывайте ту УЗ, которую прописали в `upsd.users` 
 
 ![Безымянный-1](https://user-images.githubusercontent.com/64090632/143950494-c7ee31b5-17c2-4313-a976-17c91b813876.jpg)
 
+***
+
+## Создадим выключатели
+
+![image](https://user-images.githubusercontent.com/64090632/143951843-843b302b-2539-42b5-a44d-739b603b405b.png)
+
+Для выключателей будем использовать платформу [Command line Switch](https://www.home-assistant.io/integrations/switch.command_line/). 
+> Важно! Ниже полностью рабочий пример + я использовал условие **последнее состояние** второго выключателя, они как бы в перекрестных линиях находятся, т.е условие для выключателя **Полный тест батареи** смотрит на выключатель **Быстрый тест батареи**, а условие для выключателя **Быстрый тест батареи** смотрит на выключатель **Полный тест батареи**. **Зачем я так сделал?** все дело в том, что статус **ups.status** один и он применим как для быстрого теста, так и для долго теста батареи и когда включаем тест батареи и не важно какой вариант, то оба выключателя будут включены, а с условием последнее состояние будет включен только тот выключатель, который мы включили. Таже строка **command_timeout** будет опрашивать статус и выставлять выключателю реальный статус
+
+```
+switch: 
+- platform: command_line
+  switches:
+    ups_beeper: 
+      command_on: upscmd -u hassmon -p 12345678 ups@192.168.1.200:3493 beeper.enable
+      command_off: upscmd -u hassmon -p 12345678 ups@192.168.1.200:3493 beeper.disable
+      command_state: upsc ups@192.168.1.200 ups.beeper.status
+      command_timeout: 15
+      value_template: '{{ is_state("sensor.ups_beeper_status","enabled") }}'
+      friendly_name: 'Звуковое оповещение'
+
+    ups_test_battery_deep:
+      command_on: upscmd -u hassmon -p 12345678 ups@192.168.1.200:3493 test.battery.start.deep
+      command_off: upscmd -u hassmon -p 12345678 ups@192.168.1.200:3493 test.battery.stop
+      command_state: upsc ups@192.168.1.200 ups.status
+      command_timeout: 15
+      friendly_name: 'Полный тест батареи'
+      value_template: >
+        {% set test_result = is_state("sensor.ups_self_test_result","In progress") %}
+        {% set test_battery_quick = is_state("switch.ups_test_battery_quick", "off") and (now() - states.switch.ups_test_battery_quick.last_changed).seconds > 120 %}
+        {% if test_result and test_battery_quick %} True
+        {% else %} False
+        {% endif %}
+
+    ups_test_battery_quick:
+      command_on: upscmd -u hassmon -p 12345678 ups@192.168.1.200:3493 test.battery.start.quick
+      command_off: upscmd -u hassmon -p 12345678 ups@192.168.1.200:3493 test.battery.stop
+      command_state: upsc ups@192.168.1.200 ups.status
+      friendly_name: 'Быстрый тест батареи'
+      command_timeout: 15
+      value_template: >
+        {% set test_result = is_state("sensor.ups_self_test_result","In progress") %}
+        {% set test_battery_deep = is_state("switch.ups_test_battery_deep", "off") and (now() - states.switch.ups_test_battery_deep.last_changed).seconds > 120 %}
+        {% if test_result and test_battery_deep %} True
+        {% else %} False
+        {% endif %}
+```
+
+## Создадим сенсоры
+
+> Важно! Данные сенсоры как дополнение и не являются обязательным. 
+
+* Первый сенсор **UPS Load Watts** показывает нагрузку в ваттах, вместо %
+* Второй сенсор создал с аттрибутом уровня заряда батареи, чтобы вывести в карточке как аттрибут, используя пользовательскую интеграцию [Home Assistant. Multiple Entity Row](https://github.com/benct/lovelace-multiple-entity-row)
+
+Для понимания о каком аттрибуте идет речь
+```
+  - type: custom:fold-entity-row
+    head:
+      entity: sensor.ups_cyberpower_livingroom
+      name: ИБП
+      type: custom:multiple-entity-row
+      secondary_info:
+        attribute: Уровень заряда
+        name: Батарея
+        unit: '%'
+```
+
+Сами сенсоры
+```
+sensor:
+  - platform: template
+    sensors:
+      ups_load_watts:
+        friendly_name: UPS Load Watts
+        unit_of_measurement: "W"
+        value_template: "{{ states('sensor.ups_load') | float(default=0) / 100 * 720 | round(0) }}"
+
+  - platform: template
+    sensors:
+      ups_cyberpower_livingroom:
+        friendly_name: 'Гостиная: ИБП'
+        icon_template: mdi:battery
+        value_template: "{{ states('sensor.ups_status') }}"
+        attribute_templates:
+          Уровень заряда: "{{ states('sensor.ups_battery_charge') }}"
+```
 
 
 ***
-## Панель управления
-Данную карточку для ИБП я создал с использованием двух пользовательских интеграции
-* [multiple entity row](https://github.com/benct/lovelace-multiple-entity-row)
-* [fold entity row](https://github.com/thomasloven/lovelace-fold-entity-row)
+## Добавим карточку в Lovelace
+
+Данную карточку для ИБП я создал с использованием нескольких пользовательских интеграции
+* [Home Assistant. Multiple Entity Row](https://github.com/benct/lovelace-multiple-entity-row)
+* [Home Assistant. Fold Entity Row](https://github.com/thomasloven/lovelace-fold-entity-row)
+* [Home Assistant. Group](https://www.home-assistant.io/integrations/group/)
 
 
 ![image](https://user-images.githubusercontent.com/64090632/143938920-71b7df88-6f34-46a8-b82b-7cf7966b98ae.png)
@@ -185,11 +274,12 @@ entities:
 
 
 
+
 ## Источники
 * [Network UPS Tools](https://networkupstools.org)
 * [Network UPS Tools Developer Guide](https://networkupstools.org/docs/developer-guide.chunked/index.html)
 * [Home Assistant. Network UPS Tools](https://www.home-assistant.io/integrations/nut/)
 * [Home Assistant. Command line Switch](https://www.home-assistant.io/integrations/switch.command_line/)
-* [Home Assistant. multiple entity row](https://github.com/benct/lovelace-multiple-entity-row)
-* [Home Assistant. fold entity row](https://github.com/thomasloven/lovelace-fold-entity-row)
+* [Home Assistant. Multiple Entity Row](https://github.com/benct/lovelace-multiple-entity-row)
+* [Home Assistant. Fold Entity Row](https://github.com/thomasloven/lovelace-fold-entity-row)
 * [Home Assistant. Group](https://www.home-assistant.io/integrations/group/)
