@@ -171,6 +171,8 @@ experimental:
 * [USB Хранилище](https://openwrt.org/ru/doc/howto/usb.storage)
 
 
+*Автор статьи @Clear_Highway*
+
 
 
 
