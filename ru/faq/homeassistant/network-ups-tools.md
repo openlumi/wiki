@@ -129,6 +129,9 @@ upsc ups@192.168.1.200 ups.beeper.status
 
 **3)** Установим требуемый пакет согласно файлу `manifest.json`
 
+```
+pip install pynut2==2.1.2
+```
 ![image](https://user-images.githubusercontent.com/64090632/143948890-94debf8f-6569-4d5b-a508-9645a81d612c.png)
 ![image](https://user-images.githubusercontent.com/64090632/143948945-88a65292-e567-4a56-887d-daf4cd54d3a2.png)
 
