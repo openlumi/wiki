@@ -108,7 +108,29 @@ upsc ups@192.168.1.200 ups.beeper.status
 
 
 ***
+## Установим интеграцию Network UPS Tools в Home Assistant
 
+Более подробно про установку недостающего компонента читаем [здесь](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/how-do-i-install-the-missing-component-for-homeassistant-integration.md#как-установить-недостающий-компонент-для-интеграции-home-assistant)
+
+**1)** Раскомментируем строку NUT в `config_flows.py`, который находится по пути 
+```
+/usr/lib/python3.9/site-packages/homeassistant-XXXX.XX.X-py3.9.egg/homeassistant/generated
+```
+
+![image](https://user-images.githubusercontent.com/64090632/143947920-8abf5a9d-676e-43ac-9109-acddf1045c1b.png)
+
+**2)** Скопируем папку c интеграцией nut из [архива](https://github.com/home-assistant/core/tags) в `components` , которая находится по пути 
+```
+/usr/lib/python3.9/site-packages/homeassistant-2021.11.5-py3.9.egg/homeassistant/components
+```
+
+**3)** Установим требуемый пакет согласно файлу `manifest.json`
+
+![image](https://user-images.githubusercontent.com/64090632/143948890-94debf8f-6569-4d5b-a508-9645a81d612c.png)
+![image](https://user-images.githubusercontent.com/64090632/143948945-88a65292-e567-4a56-887d-daf4cd54d3a2.png)
+
+
+***
 ## Панель управления
 Данную карточку для ИБП я создал с использованием двух пользовательских интеграции
 * [multiple entity row](https://github.com/benct/lovelace-multiple-entity-row)
