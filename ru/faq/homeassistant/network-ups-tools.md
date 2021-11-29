@@ -344,7 +344,7 @@ http://nl.alpinelinux.org/alpine/edge/testing
 ![image](https://user-images.githubusercontent.com/64090632/143956787-ab6ea78c-4088-45d8-9792-2613b9922b3c.png)
 
 
-> Важно! Если вы перезагрузите машину полностью, то OS Home Assistant затрет все настройки и пакеты, и придется по новой выполнять процедуру. Проблему можно решить запуском скрипт, но на данный момент есть проблема с запуском скрипта из Home Assistant с помощью shell command. Скрипт можно запустить с SSH. Будет здорово, если вы знаете как правильно запускать скрипт с Home Assistant и напишите мне в телегу [SmartHomeDivan](https://t.me/smart_home_divan)
+> Важно! Если вы перезагрузите машину полностью, то OS Home Assistant затрет все настройки и пакеты, и придется по новой выполнять процедуру. Проблему можно решить запуском скрипта, но на данный момент есть проблема с запуском скрипта из Home Assistant с помощью shell command. Запущенный скрипт из Home Assistant не отрабатывает команду. Скрипт можно запустить с SSH. Будет здорово, если вы знаете как правильно запускать скрипт с Home Assistant и напишите мне в телегу [SmartHomeDivan](https://t.me/smart_home_divan)
 
 Создадим скрипт который будет добавлять ссылки и устанавливать пакет `nut` и пусть скрипт лежит в папке `/config/scripts`
 
@@ -354,12 +354,12 @@ mkdir /config/scripts
 ```
 **2)** Создадим файлик и именуем `install_nut.sh`
 ```
-touch /config/install_nut.sh
+touch /config/scripts/install_nut.sh
 ```
 
 **3)** Откроем файлик `install_nut.sh`
 ```
-nano install_nut.sh
+nano /config/scripts/install_nut.sh
 ```
 
 **4)** Добавим в файлик следующее
@@ -381,7 +381,7 @@ echo "Done"
 
 **5)** Запуск скрипта 
 ```
-sh /config/install_nut.sh
+sh /config/scripts/install_nut.sh
 ```
 
 Для запуска скрипта из Home Assistant нужно использовать shell command. Ниже пример конфига для запуска скрипта из Home Assistant
