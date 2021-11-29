@@ -12,8 +12,26 @@
 ![image](https://user-images.githubusercontent.com/64090632/143942546-13de8eea-1bef-4f30-aab9-950708ce0a3b.png)
 ![image](https://user-images.githubusercontent.com/64090632/143942696-34b0db0e-e94b-4f5f-bf3d-d8a568e54fea.png)
 
-**Указываем IP адреса, которые будут иметь доступ к ИБП**
+**Указываем IP адреса, которым будет разрешен доступ к ИБП**
 ![image](https://user-images.githubusercontent.com/64090632/143942773-a5dc6c95-6a0e-4879-8821-0a1940f065c9.png)
+
+**Добавим учетную запись для доступа к серверу сетевого ИБП в upsd.users**
+
+Подключаемся к NAS Synology через консоль и  открываем upsd.users расположенный /usr/syno/etc/ups/upsd.users
+![image](https://user-images.githubusercontent.com/64090632/143943627-05bddef5-96ec-49f1-a3c3-ca7524ad036c.png)
+![image](https://user-images.githubusercontent.com/64090632/143943576-3665d7c4-87f4-4d7b-b4d0-ad4248444763.png)
+
+Добавим в самый низ строки c полным доступом и управлением(админские права) и укажем **upsmon slave** как дополнительное подключение, та как основное(master) подключение уже наcтроено по умолчанию
+
+```
+[hassmon]
+  password = 12345678
+  actions = set
+  actions = fsd
+  instcmds = all
+  upsmon slave
+```
+
 
 
 ## Команды для управления ИБП
