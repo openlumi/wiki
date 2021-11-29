@@ -58,7 +58,9 @@
 
 
 ## Команды для управления ИБП
-> Важно! На вашем ИБП список команд может отличаться от данного [списка](https://networkupstools.org/docs/developer-guide.chunked/apas02.html).
+> Важно! На вашем ИБП список команд может отличаться от предоставленного списка
+> * [Cписок команд](https://networkupstools.org/docs/developer-guide.chunked/apas02.html)
+> * [Общая информация по сенсорам и командам](https://networkupstools.org/docs/developer-guide.chunked/apas01.html)
 
 * `load.off`                        - Turn off the load immediately
 * `load.on`                         - Turn on the load immediately
