@@ -375,8 +375,10 @@ http://nl.alpinelinux.org/alpine/edge/testing
 _EOF_
 
 sleep 2
-apk add nut&&
+apk add nut
 echo "Done"
+sleep 2
+exit
 ```
 
 **5)** Запуск скрипта 
