@@ -15,8 +15,9 @@
 **Указываем IP адреса, которым будет разрешен доступ к ИБП**
 ![image](https://user-images.githubusercontent.com/64090632/143942773-a5dc6c95-6a0e-4879-8821-0a1940f065c9.png)
 
-**Добавим учетную запись для доступа к серверу сетевого ИБП в upsd.users**
+***
 
+**Добавим учетную запись для доступа к серверу сетевого ИБП в upsd.users**
 Подключаемся к NAS Synology через консоль и  открываем upsd.users расположенный /usr/syno/etc/ups/upsd.users
 ![image](https://user-images.githubusercontent.com/64090632/143943627-05bddef5-96ec-49f1-a3c3-ca7524ad036c.png)
 ![image](https://user-images.githubusercontent.com/64090632/143943576-3665d7c4-87f4-4d7b-b4d0-ad4248444763.png)
@@ -32,10 +33,23 @@
   upsmon slave
 ```
 
-**Перезапустим службу**
+***
+
+**Перезапустим службу сервера сетевого ИБП**
 
 Просто снимите галочку и нажмите применить, а после поставьте галочку и еще раз применить. На этом все. Осталось проверить доступ с консоли на шлюзе.
 ![image](https://user-images.githubusercontent.com/64090632/143944159-6461389b-e165-408c-a8ee-00ae65992037.png)
+
+***
+
+**На шлюзе ставим пакеты через LuCI**
+* nut
+* nut-upsc
+* nut-upscmd
+
+![image](https://user-images.githubusercontent.com/64090632/143945211-fba5266f-6676-4150-b2b3-28e3459ac76b.png)
+
+***
 
 Вводим команду для подключения к NAS Synology `upsc ups@ip`. Если доступ есть, то вы получите информацию с ИБП
 ![image](https://user-images.githubusercontent.com/64090632/143944340-08b5fadc-af45-4820-86b7-48f88c196137.png)
