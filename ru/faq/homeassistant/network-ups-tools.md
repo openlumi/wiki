@@ -113,9 +113,9 @@ upsc ups@192.168.1.200 ups.beeper.status
 ***
 ## Установим интеграцию Network UPS Tools в Home Assistant
 
-> Важно! В OS Home Assistant отсутствует пакет NUT. Как его установить, читайте в самом низу
-
-Более подробно про установку недостающего компонента читаем [здесь](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/how-do-i-install-the-missing-component-for-homeassistant-integration.md#как-установить-недостающий-компонент-для-интеграции-home-assistant)
+> Важно! 
+> * В OS Home Assistant отсутствует пакет NUT. Как его установить, читайте в самом низу
+> * Более подробно про установку недостающего компонента читаем [здесь](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/how-do-i-install-the-missing-component-for-homeassistant-integration.md#как-установить-недостающий-компонент-для-интеграции-home-assistant)
 
 **1)** Раскомментируем строку NUT в `config_flows.py`, который находится по пути 
 ```
