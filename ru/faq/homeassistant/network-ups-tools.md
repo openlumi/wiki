@@ -318,10 +318,26 @@ entities:
 
 ## Как запустить в OS Home Assistant клиент NUT
 
-Если попытаетесь в OS Home Assistant, через SSH запустить `upsc ups@192.168.1.200`, то получите подобное сообщение, что такого клиента нет, а также не получится установить nut клиент
+Если попытаетесь в OS Home Assistant, через SSH запустить `upsc ups@192.168.1.200`, то получите подобное сообщение, что такого клиента нет
 
 ![image](https://user-images.githubusercontent.com/64090632/143955324-e4043897-5ee1-47ac-80e4-7dee64431a58.png)
 
+При попытке установить пакет nut `apk add nut` получите сообщение, что такого пакета нет
+
+![image](https://user-images.githubusercontent.com/64090632/143955987-4ec08401-2079-46c4-8282-6fa1fac99288.png)
+
+
+Для того, чтобы установить клиента nut, необходимо открыть `repositories` по пути `/etc/apk/repositories` и добавить ссылки на тестовые и крайние репозитории
+
+![image](https://user-images.githubusercontent.com/64090632/143956240-ede2dba3-6531-4e12-9530-a38fb489df4c.png)
+![image](https://user-images.githubusercontent.com/64090632/143956456-f0125031-6d68-4fc4-a4c7-ca0b4f748a9e.png)
+
+
+```
+http://nl.alpinelinux.org/alpine/edge/main
+http://nl.alpinelinux.org/alpine/edge/community
+http://nl.alpinelinux.org/alpine/edge/testing
+```
 
 
 
