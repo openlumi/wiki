@@ -7,6 +7,39 @@
 > Важно! Ваш ИБП должен поддерживать Network UPS Tools. Список доступных ИБП можно посмотреть [здесь](https://networkupstools.org/stable-hcl.html) или на портале [Synology](https://www.synology.com/ru-ru/compatibility?search_by=category&category=upses&p=1&change_log_p=1)
 
 
+## Команды для управления ИБП
+> Важно! На вашем ИБП спсиок команд может отличаться от данного списка.
+
+**Команды**                               **Описание**
+load.off                        Turn off the load immediately
+load.on                         Turn on the load immediately
+load.off.delay                  Turn off the load possibly after a delay
+load.on.delay                   Turn on the load possibly after a delay
+shutdown.return                 Turn off the load possibly after a delay and return when power is back
+shutdown.stayoff                Turn off the load possibly after a delay and remain off even if power returns
+shutdown.stop                   Stop a shutdown in progress
+shutdown.reboot                 Shut down the load briefly while rebooting the UPS
+shutdown.reboot.graceful        After a delay, shut down the load briefly while rebooting the UPS
+test.panel.start                Start testing the UPS panel
+test.panel.stop                 Stop a UPS panel test
+test.failure.start              Start a simulated power failure
+test.failure.stop               Stop simulating a power failure
+test.battery.start              Start a battery test
+test.battery.start.quick        Start a "quick" battery test
+test.battery.start.deep         Start a "deep" battery test
+test.battery.stop               Stop the battery test
+calibrate.start                 Запуск калибровки
+calibrate.stop                  Остановка калибровки
+beeper.disable                  Выключение звукового сигнала
+beeper.enable                   Включение звукового сигнала
+beeper.mute                     Звуковой сигнал отключен
+beeper.off                      Выключение звукового сигнала
+beeper.on                       Включение звукового сигнала
+bypass.start
+bypass.stop
+
+
+
 
 ## Панель управления
 Данную карточку для ИБП я создал с использованием двух пользовательских интеграции
