@@ -126,7 +126,7 @@ upsc ups@192.168.1.200 ups.beeper.status
 
 **2)** Скопируем папку c интеграцией nut из [архива](https://github.com/home-assistant/core/tags) в `components` , которая находится по пути 
 ```
-/usr/lib/python3.9/site-packages/homeassistant-2021.11.5-py3.9.egg/homeassistant/components
+/usr/lib/python3.9/site-packages/homeassistant-XXXX.XX.X-py3.9.egg/homeassistant/components
 ```
 
 **3)** Установим требуемый пакет согласно файлу `manifest.json`
