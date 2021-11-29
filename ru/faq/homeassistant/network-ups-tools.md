@@ -111,7 +111,9 @@ upsc ups@192.168.1.200 ups.beeper.status
 ***
 ## Установим интеграцию Network UPS Tools в Home Assistant
 
-> Важно! Более подробно про установку недостающего компонента читаем [здесь](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/how-do-i-install-the-missing-component-for-homeassistant-integration.md#как-установить-недостающий-компонент-для-интеграции-home-assistant)
+> Важно! В OS Home Assistant отсутствует пакет NUT. Как его установить, читайте в самом низу
+
+Более подробно про установку недостающего компонента читаем [здесь](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/how-do-i-install-the-missing-component-for-homeassistant-integration.md#как-установить-недостающий-компонент-для-интеграции-home-assistant)
 
 **1)** Раскомментируем строку NUT в `config_flows.py`, который находится по пути 
 ```
@@ -225,6 +227,44 @@ sensor:
         attribute_templates:
           Уровень заряда: "{{ states('sensor.ups_battery_charge') }}"
 ```
+
+## Создадим групу сенсоров
+
+Это группа сенсоров будет применяться в карточке для ИБП, где достаточно тапнуть на иконку сенсоры и будет отображаться список сеноров ИБП, что очень удобно.
+
+```
+livingroom_ups:
+  name: "Гостиная: ИБП. Сенсоры"
+  icon: mdi:battery
+  all: false
+  entities:
+    - sensor.ups_battery_charge
+    - sensor.ups_status
+    - sensor.ups_beeper_status
+    - sensor.ups_load
+    - sensor.ups_load_watts
+    - sensor.ups_nominal_real_power
+    - sensor.ups_low_battery_setpoint
+    - sensor.ups_warning_battery_setpoint
+    - sensor.ups_input_voltage
+    - sensor.ups_output_voltage
+    - sensor.ups_low_voltage_transfer
+    - sensor.ups_high_voltage_transfer
+    - sensor.ups_battery_voltage
+    - sensor.ups_nominal_battery_voltage
+    - sensor.ups_nominal_input_voltage
+    - sensor.ups_ups_shutdown_delay
+    - sensor.ups_load_restart_delay
+    - sensor.ups_battery_runtime
+    - sensor.ups_self_test_result
+    - sensor.ups_low_battery_runtime
+    - sensor.ups_load_start_timer
+    - sensor.ups_load_shutdown_timer
+    - sensor.ups_battery_chemistry
+    - sensor.ups_status_data
+    - sensor.ups_battery_manuf_date
+```
+
 
 После создания выключателей и сенсоров, запускаем в Home Assistant проверку конфигурации и если все верно, перезагружаем Home Assistant
 
