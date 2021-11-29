@@ -110,7 +110,7 @@ upsc ups@192.168.1.200 ups.beeper.status
 ***
 ## Установим интеграцию Network UPS Tools в Home Assistant
 
-Более подробно про установку недостающего компонента читаем [здесь](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/how-do-i-install-the-missing-component-for-homeassistant-integration.md#как-установить-недостающий-компонент-для-интеграции-home-assistant)
+> Важно! Более подробно про установку недостающего компонента читаем [здесь](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/homeassistant/how-do-i-install-the-missing-component-for-homeassistant-integration.md#как-установить-недостающий-компонент-для-интеграции-home-assistant)
 
 **1)** Раскомментируем строку NUT в `config_flows.py`, который находится по пути 
 ```
@@ -128,6 +128,15 @@ upsc ups@192.168.1.200 ups.beeper.status
 
 ![image](https://user-images.githubusercontent.com/64090632/143948890-94debf8f-6569-4d5b-a508-9645a81d612c.png)
 ![image](https://user-images.githubusercontent.com/64090632/143948945-88a65292-e567-4a56-887d-daf4cd54d3a2.png)
+
+**4)** Перезагружаем шлюз, можно конечно перезагрузить Home Assistant, но я все же перезагружаю шлюз целиком, так точно интеграция прогружается в Home Assistant
+```
+reboot
+```
+**5)** Ставим интеграцию **Network UPS Tools** и указываем IP адрес к серверу ИБП. Логин и пароль можно не указывать и без него пускает, елси не пустит, то указывайте ту УЗ, которую прописали в `upsd.users` 
+
+![Безымянный-1](https://user-images.githubusercontent.com/64090632/143950494-c7ee31b5-17c2-4313-a976-17c91b813876.jpg)
+
 
 
 ***
