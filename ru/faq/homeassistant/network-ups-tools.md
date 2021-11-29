@@ -19,11 +19,11 @@
 
 **Добавим учетную запись для доступа к серверу сетевого ИБП в upsd.users**
 
-Подключаемся к NAS Synology через консоль и  открываем upsd.users расположенный /usr/syno/etc/ups/upsd.users
+Подключаемся к NAS Synology через консоль и открываем `upsd.users` расположенный `/usr/syno/etc/ups/upsd.users`
 ![image](https://user-images.githubusercontent.com/64090632/143943627-05bddef5-96ec-49f1-a3c3-ca7524ad036c.png)
 ![image](https://user-images.githubusercontent.com/64090632/143943576-3665d7c4-87f4-4d7b-b4d0-ad4248444763.png)
 
-Добавим в самый низ строки c полным доступом и управлением(админские права) и укажем **upsmon slave** как дополнительное подключение, так как основное(master) подключение уже наcтроено по умолчанию.
+Добавим в самый низ строки c полным доступом и управлением(админские права) и укажем `upsmon slave` как дополнительное подключение, так как основное(master) подключение уже наcтроено по умолчанию.
 
 ```
 [hassmon]
@@ -60,32 +60,32 @@
 ## Команды для управления ИБП
 > Важно! На вашем ИБП список команд может отличаться от данного [списка](https://networkupstools.org/docs/developer-guide.chunked/apas02.html).
 
-* `load.off`                        - (Turn off the load immediately)
-* `load.on`                         - (Turn on the load immediately)
-* `load.off.delay`                  - (Turn off the load possibly after a delay)
-* `load.on.delay`                   - (Turn on the load possibly after a delay)
-* `shutdown.return`                 - (Turn off the load possibly after a delay and return when power is back)
-* `shutdown.stayoff`                - (Turn off the load possibly after a delay and remain off even if power returns)
-* `shutdown.stop`                   - (Stop a shutdown in progress)
-* `shutdown.reboot`                 - (Shut down the load briefly while rebooting the UPS)
-* `shutdown.reboot.graceful`        - (After a delay, shut down the load briefly while rebooting the UPS)
-* `test.panel.start`                - (Start testing the UPS panel)
-* `test.panel.stop`                 - (Stop a UPS panel test)
-* `test.failure.start`              - (Start a simulated power failure)
-* `test.failure.stop`               - (Stop simulating a power failure)
-* `test.battery.start`              - (Start a battery test)
-* `test.battery.start.quick`        - (Start a "quick" battery test)
-* `test.battery.start.deep`         - (Start a "deep" battery test)
-* `test.battery.stop`               - (Stop the battery test)
-* `calibrate.start`                 - (Запуск калибровки)
-* `calibrate.stop`                  - (Остановка калибровки)
-* `beeper.disable`                  - (Выключение звукового сигнала)
-* `beeper.enable`                   - (Включение звукового сигнала)
-* `beeper.mute`                     - (Звуковой сигнал отключен)
-* `beeper.off`                      - (Выключение звукового сигнала)
-* `beeper.on`                       - (Включение звукового сигнала)
-* `bypass.start`
-* `bypass.stop`
+* `load.off`                        - Turn off the load immediately
+* `load.on`                         - Turn on the load immediately
+* `load.off.delay`                  - Turn off the load possibly after a delay
+* `load.on.delay`                   - Turn on the load possibly after a delay
+* `shutdown.return`                 - Turn off the load possibly after a delay and return when power is back
+* `shutdown.stayoff`                - Turn off the load possibly after a delay and remain off even if power returns
+* `shutdown.stop`                   - Stop a shutdown in progress
+* `shutdown.reboot`                 - Shut down the load briefly while rebooting the UPS
+* `shutdown.reboot.graceful`        - After a delay, shut down the load briefly while rebooting the UPS
+* `test.panel.start`                - Start testing the UPS panel
+* `test.panel.stop`                 - Stop a UPS panel test
+* `test.failure.start`              - Start a simulated power failure
+* `test.failure.stop`               - Stop simulating a power failure
+* `test.battery.start`              - Start a battery test
+* `test.battery.start.quick`        - Start a "quick" battery test
+* `test.battery.start.deep`         - Start a "deep" battery test
+* `test.battery.stop`               - Stop the battery test
+* `calibrate.start`                 - Start runtime calibration
+* `calibrate.stop`                  - Stop runtime calibration
+* `beeper.disable`                  - Disable UPS beeper/buzzer
+* `beeper.enable`                   - Enable UPS beeper/buzzer
+* `beeper.mute`                     - Temporarily mute UPS beeper/buzzer
+* `beeper.off`                      - Turn off UPS beeper/buzzer
+* `beeper.on`                       - Turn on UPS beeper/buzzer
+* `bypass.start`                    - Put the UPS in bypass mode
+* `bypass.stop`                     - Take the UPS out of bypass mode
 
 ***
 
