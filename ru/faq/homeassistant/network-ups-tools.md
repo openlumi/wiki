@@ -6,9 +6,18 @@
 
 > Важно! Ваш ИБП должен поддерживать Network UPS Tools. Список доступных ИБП можно посмотреть [здесь](https://networkupstools.org/stable-hcl.html) или на портале [Synology](https://www.synology.com/ru-ru/compatibility?search_by=category&category=upses&p=1&change_log_p=1)
 
+## NAS Synology
+
+**Включим сервер сетевого ИБП**
+![image](https://user-images.githubusercontent.com/64090632/143942546-13de8eea-1bef-4f30-aab9-950708ce0a3b.png)
+![image](https://user-images.githubusercontent.com/64090632/143942696-34b0db0e-e94b-4f5f-bf3d-d8a568e54fea.png)
+
+**Указываем IP адреса, которые будут иметь доступ к ИБП**
+![image](https://user-images.githubusercontent.com/64090632/143942773-a5dc6c95-6a0e-4879-8821-0a1940f065c9.png)
+
 
 ## Команды для управления ИБП
-> Важно! На вашем ИБП спсиок команд может отличаться от данного списка.
+> Важно! На вашем ИБП список команд может отличаться от данного [списка](https://networkupstools.org/docs/developer-guide.chunked/apas02.html).
 
 * `load.off`                        - (Turn off the load immediately)
 * `load.on`                         - (Turn on the load immediately)
