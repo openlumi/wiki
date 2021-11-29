@@ -17,7 +17,7 @@
 
 ***
 
-**Добавим учетную запись для доступа к серверу сетевого ИБП в upsd.users**
+**Добавим учетную запись в upsd.users для доступа к серверу сетевого ИБП**
 
 Подключаемся к NAS Synology через консоль и открываем `upsd.users` расположенный `/usr/syno/etc/ups/upsd.users`
 ![image](https://user-images.githubusercontent.com/64090632/143943627-05bddef5-96ec-49f1-a3c3-ca7524ad036c.png)
