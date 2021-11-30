@@ -1,5 +1,7 @@
 # System Monitor   мониторим шлюз
 
+[Стартовая страница WiKi](https://github.com/DivanX10/wiki#readme)
+
 С помощью интеграции System Monitor мы можем мониторить шлюз, знать его текущее состояние, нагрузку на процессор, свободный объем памяти, сколько места осталось на шлюзе и т.д. более подробнее читаем про интеграцию System Monitor [здесь](https://www.home-assistant.io/integrations/systemmonitor/)
 
 ![system monitor](https://user-images.githubusercontent.com/64090632/143778872-c7667101-4d39-4c3e-aeda-61a1a5ab41e9.JPG)
