@@ -215,6 +215,11 @@ switch:
 ```
 
 Сами сенсоры
+> Важно! В строке `value_template: "{{ states('sensor.ups_load') | float(default=0) / 100 * 720 | round(0) }}" есть цифра 720. Вам нужно подгонять под свой ИБП. Сверяйте например с программой WinNUT-Client. Скачать WinNUT-Client можно [здесь](https://github.com/gawindx/WinNUT-Client/releases)
+
+![image](https://user-images.githubusercontent.com/64090632/143961494-9ac84a08-7dcc-4083-8667-7b86bc4bbe83.png)
+
+
 ```
 sensor:
   - platform: template
