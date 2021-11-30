@@ -17,6 +17,7 @@
 1. [Подключаем Яндекс диск (Webdav)](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/connecting-yandex-disk.md#подключаем-яндекс-диск-webdav)
 1. [Как обновить шлюз прошивкой squashfs sysupgrade.bin?](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/how-to-update-the-gateway-with-squashfs-sysupgrade-firmware-bin.md)
 1. [Делаем резервное копирование на NAS Synology](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/backup-to-nas-synology.md#делаем-резервное-копирование-на-nas-synology)
+1. [Подключаем USB накопитель для расширения памяти](https://github.com/DivanX10/wiki/blob/gh-pages/ru/faq/general/connecting_usb_on_%20gateway.md#подключаем-usb-накопитель-для-расширения-памяти)
 
 </details>
 
