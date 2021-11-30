@@ -75,3 +75,11 @@
 * [Lumi custom feed](https://github.com/Alx2000y/lumi-custom-feed)
 
 </details>
+
+<details>
+  <summary><b>Контакты</b></summary>
+
+* Чат в telegram [SmartHomeDivan](https://t.me/smart_home_divan)
+* Чат в telegram [XiaomiGatewayHack](https://t.me/xiaomi_gw_hack)
+
+</details>
