@@ -35,3 +35,38 @@ tar cvz -f /tmp/backup_$(date +%d-%m-20%y_%H-%M).tar.gz -C /overlay/upper/ /over
 
 System => Backup/Flash Firmware
 ![image](https://user-images.githubusercontent.com/64090632/141359903-58c2f4ac-5078-4927-86e1-619a49d883fd.png)
+
+## Если нужно обновиться с Openwrt 21.02 до Openwrt 21.02.01
+
+**1)** Скачиваем для своего шлюза Xiaomi DGNWG05LM или Aqara ZHWG11LM sysupgrade. Ссылка на [прошивки](https://openlumi.github.io/releases/21.02.1/targets/imx6/generic/)
+
+* Для Xiaomi DGNWG05LM [openlumi-21.02.1-imx6-xiaomi_dgnwg05lm-squashfs-sysupgrade.bin](https://openlumi.github.io/releases/21.02.1/targets/imx6/generic/openlumi-21.02.1-imx6-xiaomi_dgnwg05lm-squashfs-sysupgrade.bin)
+* Для Aqara ZHWG11LM [openlumi-21.02.1-imx6-aqara_zhwg11lm-squashfs-sysupgrade.bin](https://openlumi.github.io/releases/21.02.1/targets/imx6/generic/openlumi-21.02.1-imx6-aqara_zhwg11lm-squashfs-sysupgrade.bin)
+
+![image](https://user-images.githubusercontent.com/64090632/151702014-f8e77994-0572-4569-a267-5e3b17599255.png)
+
+**2)** Загружаем прошивку через Flash new firmware image
+
+![image](https://user-images.githubusercontent.com/64090632/151701847-c2d49993-911c-4f74-837e-447f4b366901.png)
+
+
+**3)** Перезагружаем шлюз
+
+***
+
+## Если нужно откатиться с Openwrt 21.02.1 до Openwrt 21.02
+
+**1)** Скачиваем для своего шлюза Xiaomi DGNWG05LM или Aqara ZHWG11LM sysupgrade. Ссылка на [прошивки](https://openlumi.github.io/releases/21.02.0/targets/imx6/generic/)
+
+* Для Xiaomi DGNWG05LM [openlumi-21.02.0-imx6-xiaomi_dgnwg05lm-squashfs-sysupgrade.bin](https://openlumi.github.io/releases/21.02.0/targets/imx6/generic/openlumi-21.02.0-imx6-xiaomi_dgnwg05lm-squashfs-sysupgrade.bin)
+* Для Aqara ZHWG11LM [openlumi-21.02.0-imx6-aqara_zhwg11lm-squashfs-sysupgrade.bin](https://openlumi.github.io/releases/21.02.1/targets/imx6/generic/openlumi-21.02.1-imx6-aqara_zhwg11lm-squashfs-sysupgrade.bin)
+
+![image](https://user-images.githubusercontent.com/64090632/151702391-16b3bb2f-7633-46ff-be25-549be335230b.png)
+
+
+**2)** Загружаем прошивку через Flash new firmware image
+
+![image](https://user-images.githubusercontent.com/64090632/151701847-c2d49993-911c-4f74-837e-447f4b366901.png)
+
+
+**3)** Перезагружаем шлюз  

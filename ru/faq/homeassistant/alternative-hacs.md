@@ -124,7 +124,6 @@ sensor:
 
 ```
 
-
 ## Источники
 * [Интеграция Updater](https://github.com/AlexxIT/Updater)
 * [Интеграция Yandex Smart Home](https://github.com/dmitry-k/yandex_smart_home)

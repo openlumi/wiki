@@ -1,16 +1,14 @@
 # Как добавить интеграцию TTS Яндекс
 
-
-
 ## Платный вариант
 Для работы интеграции [TTS Яндекс](https://github.com/tayanov/Yandex-tts-speechkit-FIX) в Home Assistant необходимо установить [TTS Яндекс](https://github.com/tayanov/Yandex-tts-speechkit-FIX) в custom_components. Данная интеграция работает только с помощью API ключей. API ключи платные.
 
 ## Бесплатный вариант
 В этом варианте нужно использовать MPD (Music Player Daemon). Про установку Music Player Daemon читаем [здесь](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/wiki/Как-настроить-Music-Player-Daemon%3F)
 
-* Создаем файлы с речью с помощью [Yandex SpeechKit](https://cloud.yandex.ru/services/speechkit). 
-* На сайте [Yandex SpeechKit](https://cloud.yandex.ru/services/speechkit) пролистайте до "Попробуйте Yandex SpeechKit API". 
-* Вписываем любую фразу и сохраняем файл на ПК. 
+* Создаем файлы с речью с помощью [Yandex SpeechKit](https://cloud.yandex.ru/services/speechkit).
+* На сайте [Yandex SpeechKit](https://cloud.yandex.ru/services/speechkit) пролистайте до "Попробуйте Yandex SpeechKit API".
+* Вписываем любую фразу и сохраняем файл на ПК.
 * Конвертируем формат ogg в mp3. Сделать это можно любым способом. Например можно использовать [онлайн конвертер ogg в mp3](https://audio.online-convert.com/ru/convert/ogg-to-mp3).
 * Файл mp3 закидываем в MPD, в папку music
 * В Home Assistant запускаем аудиофайл через службу service: media_player.play_media

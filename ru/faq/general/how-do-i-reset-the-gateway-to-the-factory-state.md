@@ -37,7 +37,7 @@ rm -rf /overlay/upper/.* /overlay/upper/* && reboot
 
 
 ## Сброс шлюза через LuCI
- 
+
 Переходим на страницу бэкапа и прошивки System => Backup / Flash Firmware. Нажимаем на кнопку Reset to defaults
 
 ![Reset to defaults](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/reset%20to%20defaults.jpg)

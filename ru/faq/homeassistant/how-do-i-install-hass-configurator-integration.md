@@ -28,7 +28,7 @@ pip install hass-configurator
 
 2) Скопировать в папку `components` интеграцию `panel_iframe`. Если не знаете как это сделать, то читаем [Как установить недостающий компонент для интеграции Home Assistant?](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/wiki/Как-установить-недостающий-компонент-для-интеграции-Home-Assistant%3F)
 
-3) В configuration.yaml добавить
+3) В configuration.yaml `/etc/homeassistant/configuration.yaml` добавить
 
 ```
 panel_iframe:
@@ -77,7 +77,7 @@ chmod +x /etc/init.d/hass-configurator
 
 ## Удаление вручную
 
-Удаляем или комментируем строки в configuration.yaml и перезагружаем Home Assistant
+Удаляем или комментируем строки в configuration.yaml `/etc/homeassistant/configuration.yaml` и перезагружаем Home Assistant
 ```
 #panel_iframe:
 #  configurator:
@@ -118,7 +118,7 @@ pip uninstall hass-configurator -y
 wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/integration/hass_configurator/install_hass_configurator.sh -O - | sh
 ```
 
-**В configuration.yaml добавить**
+**В configuration.yaml `/etc/homeassistant/configuration.yaml` добавить**
 ```
 panel_iframe:
   configurator:
@@ -137,11 +137,11 @@ panel_iframe:
 wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/integration/hass_configurator/uninstall_hass_configurator_del_conf_auto.sh -O - | sh
 ```
 
-**Удаление интеграции HASS-конфигуратор. Удаляете строки в в configuration.yaml и перезагружаете вручную Home Assistant**
+**Удаление интеграции HASS-конфигуратор. Удаляете строки в configuration.yaml и перезагружаете вручную Home Assistant**
 ```
 wget  https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/main/integration/hass_configurator/uninstall_hass_configurator_del_conf_manual.sh -O - | sh
 ```
-Удаляем или комментируем строки в configuration.yaml и перезагружаем Home Assistant
+Удаляем или комментируем строки в configuration.yaml `/etc/homeassistant/configuration.yaml` и перезагружаем Home Assistant
 ```
 #panel_iframe:
 #  configurator:

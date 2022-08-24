@@ -1,6 +1,5 @@
 # ZHA. Какую прошивку ставить?
 
-
 Для ZHA надо ставить оригинальную прошивку ZiGate и только baudrate 115200. Прошивку можно скачать [здесь](https://github.com/openlumi/ZiGate/releases)
 
 

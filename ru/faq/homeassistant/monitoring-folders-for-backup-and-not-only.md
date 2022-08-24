@@ -1,6 +1,5 @@
 # Мониторинг папок для бэкапа и не только
 
-
 С помощью интеграции [Folder Watcher](https://www.home-assistant.io/integrations/folder_watcher) можно мониторить файловую систему и следить за событием, такие как создание/удаление/изменение файлов в настроенных папках.
 
 
@@ -96,5 +95,4 @@ icon: mdi:database-sync
 * [Folder](https://www.home-assistant.io/integrations/folder/#configuration)
 * [Folder Watcher](https://www.home-assistant.io/integrations/folder_watcher)
 * [Allowlist external dirs](https://www.home-assistant.io/docs/configuration/basic/#allowlist_external_dirs)
-
 

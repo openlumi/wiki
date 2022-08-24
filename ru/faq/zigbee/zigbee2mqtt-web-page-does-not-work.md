@@ -1,6 +1,5 @@
 # Установил zigbee2mqtt. Не работает веб страница zigbee2mqtt
 
-
 ## Если установили zigbee2mqtt и веб страница zigbee2mqtt не открывается, то возможно проблема в следующем
 
 * Не запущена служба zigbee2mqtt. Надо запустить службу, либо через консоль командой /etc/init.d/zigbee2mqtt/start, либо через LuCI System => Startup
