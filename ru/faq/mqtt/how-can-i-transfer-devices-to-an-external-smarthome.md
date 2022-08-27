@@ -1,3 +1,14 @@
+---
+
+categories:
+- mqtt
+- use-cases
+
+software:
+- mosquitto
+- zigbee2mqtt
+- lumimqtt
+---
 # Как я могу пробросить устройства на внешний умный дом
 
 ## Вступление

@@ -1,3 +1,11 @@
+---
+
+categories:
+- zigbee
+
+software:
+- jntools
+---
 # Чем отличается Erase PDM от Soft reset?
 
 **Erase PDM** - стирает флеш-память модуля zigbee полностью

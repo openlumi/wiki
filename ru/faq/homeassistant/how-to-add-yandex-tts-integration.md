@@ -1,3 +1,13 @@
+---
+
+categories:
+- use-cases
+- sound
+- tts
+
+software:
+- homeassistant
+---
 # Как добавить интеграцию TTS Яндекс
 
 ## Платный вариант

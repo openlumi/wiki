@@ -1,3 +1,11 @@
+---
+
+categories:
+- zigbee
+
+software:
+- zigbee2mqtt
+---
 # Ведение журнала отладки Zigbee herdsman. Как получить лог zigbee herdsman?
 
 Делать нужно через консоль.

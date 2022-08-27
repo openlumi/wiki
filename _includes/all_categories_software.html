@@ -1,0 +1,18 @@
+{% assign categories = site.wiki.categories %}
+{% assign software = '' | split: '' %}
+
+{%- assign pages = site.pages | where: 'layout', 'page'  -%}
+{% for page in pages %}
+{% if page.categories and page.categories != "" and page.categories != nil %}
+{% assign tcategories = page.categories %}
+{% assign categories=categories | concat: tcategories %}
+{% endif %}
+
+{% if page.software and page.software != "" and page.software != nil %}
+{% assign tsoftware = page.software %}
+{% assign software=software | concat: tsoftware %}
+{% endif %}
+{% endfor %}
+
+{% assign categories = categories | uniq %}
+{% assign software = software | uniq %}

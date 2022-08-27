@@ -1,3 +1,12 @@
+---
+
+categories:
+- sound
+- use-cases
+
+software:
+- mpd
+---
 # Как настроить Music Player Daemon?
 
 Можете посмотреть [видеомануал](https://youtu.be/ur4laA1UsbI) на моем канале "Умный дом с Диваном"

@@ -1,3 +1,12 @@
+---
+
+categories:
+- mqtt
+- use-cases
+
+software:
+- mosquitto
+---
 # MQTT мост
 
 ### Зачем нужен MQTT мост?

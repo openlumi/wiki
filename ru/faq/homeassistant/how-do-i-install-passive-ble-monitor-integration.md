@@ -1,3 +1,12 @@
+---
+
+categories:
+- use-cases
+- bluetooth
+  
+software:
+- homeassistant
+---
 # Как установить интеграцию Passive BLE Monitor?
 
 > Важно! Home Assistant на шлюзе находится по этому адресу `/etc/homeassistant/`

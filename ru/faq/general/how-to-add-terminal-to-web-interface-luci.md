@@ -1,4 +1,13 @@
-#Как вывести терминал в веб интерфейс LuCI
+---
+
+categories:
+- use-cases
+
+software:
+- luci
+---
+
+# Как вывести терминал в веб интерфейс LuCI
 
 **1)** Заходим в Software через System => Software и обновляем список, далее ставим пакет luci-app-ttyd
 

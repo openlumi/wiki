@@ -1,3 +1,12 @@
+---
+
+categories:
+- use-cases
+- troubleshooting
+  
+software:
+- homeassistant
+---
 # Как установить недостающий компонент для интеграции Home Assistant?
 
 ## Вступление

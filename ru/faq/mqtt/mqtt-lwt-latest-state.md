@@ -1,3 +1,12 @@
+---
+
+categories:
+- mqtt
+- use-cases
+
+software:
+- mosquitto
+---
 # MQTT LWT последнее состояние
 
 ## Вступление

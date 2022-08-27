@@ -2,9 +2,18 @@
 layout: default
 ---
 <article class="post">
+
     <div>
         <a class="edit-page" href="https://github.com/openlumi/wiki/edit/gh-pages/{{ page.path }}" target="_blank">Edit
             this page</a>
+        {% capture toc %}{% include toc.html html=content h_min=2 %}{% endcapture %}
+        {% assign toc = toc | strip %}
+        {% if toc != ""  %}
+            <details open>
+                <summary>Оглавление:</summary>
+                {{ toc }}
+            </details>
+        {% endif %}
     </div>
     <div class="post-content">
         {{ content }}

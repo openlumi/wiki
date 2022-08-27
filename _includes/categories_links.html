@@ -1,0 +1,22 @@
+{%- assign _category_page = '' -%}
+{%- assign _category_page = site.pages | where: 'layout', 'category' | where: 'code', category | first -%}
+<p>
+{% if include.show_h %}
+    <h3 id="category_{{ category | escape }}">
+        {% if _category_page.title and _category_page.title != '' %}
+        <a href="{{ _category_page.url | relative_url }}">{{ _category_page.title }}</a>
+        {% else %}
+        {{ category | escape}}
+        {% endif %}
+    </h3>
+{% endif %}
+<ul>
+    {%- assign pages = site.pages | where: 'layout', 'page' | sort: "title" -%}
+    {%- for page in pages -%}
+    {% if page.categories contains category %}
+    <li><a class="page-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
+    {% endif %}
+    {% endfor %}
+
+</ul>
+</p>

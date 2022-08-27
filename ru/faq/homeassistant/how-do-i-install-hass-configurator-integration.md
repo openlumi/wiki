@@ -1,3 +1,11 @@
+---
+
+categories:
+- use-cases
+  
+software:
+- homeassistant
+---
 # Как установить интеграцию HASS Configurator?
 
 

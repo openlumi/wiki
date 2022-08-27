@@ -1,4 +1,13 @@
-#Home-Assistant на шлюзе не запускается
+---
+
+categories:
+- use-cases
+- troubleshooting
+  
+software:
+- homeassistant
+---
+# Home-Assistant на шлюзе не запускается
 
 Если вы столкнулись с тем, что Home Assistant на шлюзе не запускается, то есть несколько причин, отсутствует нужный пакет для интеграции, допущена ошибка в конфигурации Home Assistant или просто не Home Assistant не может самостоятельно запуститься.
 

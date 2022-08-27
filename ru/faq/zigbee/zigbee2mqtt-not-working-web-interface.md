@@ -1,4 +1,13 @@
-#Установил zigbee2mqtt.Не открывается веб-страница zigbee2mqtt
+---
+
+categories:
+- zigbee
+- troubleshooting
+
+software:
+- zigbee2mqtt
+---
+# Установил zigbee2mqtt. Не открывается веб-страница zigbee2mqtt
 
 ## Если установили zigbee2mqtt и веб страница zigbee2mqtt не открывается, то возможно проблема в следующем
 

@@ -1,4 +1,12 @@
-#Как перепрошить чип ZigBee?
+---
+
+categories:
+- zigbee
+
+software:
+- jntools
+---
+# Как перепрошить чип ZigBee?
 
 **1)** Скачать нужную прошивку
 

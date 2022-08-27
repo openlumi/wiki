@@ -1,4 +1,13 @@
-# System Monitor   мониторим шлюз
+---
+
+categories:
+- use-cases
+- monitoring
+
+software:
+- homeassistant
+---
+# System Monitor мониторим шлюз
 
 С помощью интеграции System Monitor мы можем мониторить шлюз, знать его текущее состояние, нагрузку на процессор, свободный объем памяти, сколько места осталось на шлюзе и т.д. более подробнее читаем про интеграцию System Monitor [здесь](https://www.home-assistant.io/integrations/systemmonitor/)
 

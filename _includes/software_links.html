@@ -1,0 +1,24 @@
+{%- assign _soft_page = '' -%}
+{%- assign _soft_page = site.pages | where: 'layout', 'soft' | where: 'code', soft | first -%}
+<p>
+
+{% if include.show_h %}
+    <h3 id="software_{{ soft | escape }}">
+        {% if _soft_page.title and _soft_page.title != '' %}
+        <a href="{{ _soft_page.url | relative_url }}">{{ _soft_page.title }}</a>
+        {% else %}
+        {{ soft | escape }}
+        {% endif %}
+    </h3>
+{% endif %}
+
+<ul>
+    {%- assign pages = site.pages | where: 'layout', 'page' | sort: "title" -%}
+    {%- for page in pages -%}
+    {% if page.software contains soft %}
+    <li><a class="page-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
+    {% endif %}
+    {% endfor %}
+
+</ul>
+</p>

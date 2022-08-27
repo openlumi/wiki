@@ -1,3 +1,12 @@
+---
+
+categories:
+- use-cases
+- monitoring
+
+software:
+- homeassistant
+---
 # Мониторинг папок для бэкапа и не только
 
 С помощью интеграции [Folder Watcher](https://www.home-assistant.io/integrations/folder_watcher) можно мониторить файловую систему и следить за событием, такие как создание/удаление/изменение файлов в настроенных папках.

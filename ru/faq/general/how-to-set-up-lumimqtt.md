@@ -1,3 +1,11 @@
+---
+
+categories:
+- software
+
+software:
+- lumimqtt
+---
 # Как настроить lumimqtt?
 
 Для управления подсветкой шлюза необходимо установить lumimqtt. Читаем подробно про lumimqtt [здесь](https://github.com/openlumi/lumimqtt)

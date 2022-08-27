@@ -1,4 +1,14 @@
-#Делаем бэкап zigbee2mqtt
+---
+
+categories:
+- zigbee
+- backup
+- use-cases
+
+software:
+- zigbee2mqtt
+---
+# Делаем бэкап zigbee2mqtt
 
 ## Вступление
 

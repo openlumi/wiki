@@ -1,4 +1,12 @@
-#Как установить OpenWRT на шлюз?
+---
+
+categories:
+- firmware
+
+software:
+- openwrt
+---
+# Как установить OpenWRT на шлюз?
 
 Смотрим [видеоинструкцию](https://youtu.be/QhVWqDHjWu8)
 ***

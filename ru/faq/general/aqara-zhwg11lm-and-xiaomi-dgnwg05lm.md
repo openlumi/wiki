@@ -1,3 +1,9 @@
+---
+
+categories:
+- hardware
+
+---
 # В чем разница между Aqara ZHWG11LM и Xiaomi DGNWG05LM?
 
 

@@ -1,3 +1,12 @@
+---
+
+categories:
+- mqtt
+- use-cases
+
+software:
+- mosquitto
+---
 # Как установить и настроить mosquitto? Зачем это нужно?
 
 ## Зачем это нужно?

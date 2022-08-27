@@ -1,3 +1,12 @@
+---
+
+categories:
+- use-cases
+- monitoring
+
+software:
+- homeassistant
+---
 # Network UPS Tools. Мониторинг и управление ИБП
 
 **Network UPS Tools** — это комплекс программ мониторинга и управления различными блоками бесперебойного питания.
@@ -236,6 +245,7 @@ switch:
 
 Для понимания о каком аттрибуте идет речь
 ```
+{% raw %}
   - type: custom:fold-entity-row
     head:
       entity: sensor.ups_cyberpower_livingroom
@@ -245,10 +255,13 @@ switch:
         attribute: Уровень заряда
         name: Батарея
         unit: '%'
+        
+{% endraw %}
 ```
 
 Сами сенсоры
-> Важно! В строке `value_template: "{{ states('sensor.ups_load') | float(default=0) / 100 * 720 | round(0) }}"` есть цифра `720`. Это цифра означает мощность вашего ИБП. Смотрите строку `ups.realpower.nominal: 720`
+> Важно! В строке `{% raw %}value_template: "{{ states('sensor.ups_load') | float(default=0) / 100 * 720 | round(0) }}"
+{% endraw %}` есть цифра `720`. Это цифра означает мощность вашего ИБП. Смотрите строку `ups.realpower.nominal: 720`
 
 Узнать мощность ИБП можно командой
 ```
@@ -261,6 +274,7 @@ upsc ups@192.168.1.200 ups.realpower.nominal
 
 
 ```
+{% raw %}
 sensor:
   - platform: template
     sensors:
@@ -277,6 +291,7 @@ sensor:
         value_template: "{{ states('sensor.ups_status') }}"
         attribute_templates:
           Уровень заряда: "{{ states('sensor.ups_battery_charge') }}"
+{% endraw %}
 ```
 
 ## Создадим группу сенсоров
@@ -502,6 +517,7 @@ data:
 
 Пример выключателя с помощью интеграции [Template Switch](https://www.home-assistant.io/integrations/switch.template/)
 ```
+{% raw %}
 switch: 
   - platform: template
     switches:
@@ -524,6 +540,7 @@ switch:
           {% else %}
             mdi:volume-off
           {% endif %}
+{% endraw %}
 ```
 
 

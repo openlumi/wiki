@@ -1,0 +1,58 @@
+<!--
+
+{%- assign default_paths = site.pages | sort: "dir" | map: "path" -%}
+<ul>
+    {%- for path in default_paths -%}
+    {%- assign my_page = site.pages | where: "path", path | first -%}
+    {%- if my_page.title -%}
+    <li> <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a> </li>
+    {%- endif -%}
+    {%- endfor -%}
+</ul>
+-->
+
+<div class="footer-tags">
+    {%- for category in categories -%}
+    {%- assign _category_page = '' -%}
+    {%- assign _category_page = site.pages | where: 'layout', 'category' | where: 'code', category | first -%}
+
+    <div class="tag">
+        {% if _category_page.title and _category_page.title != '' %}
+        <a href="{{ _category_page.url | relative_url }}">
+            {{ _category_page.title }}
+        </a>
+        {% else %}
+        <a href="{{ '/' | relative_url }}#category_{{category}}">
+            {{ category | escape}}
+        </a>
+        {% endif %}
+
+    </div>
+    <div>|</div>
+    {% endfor %}
+
+</div>
+
+<br/>
+
+<div class="footer-tags">
+    {%- for soft in software -%}
+    {%- assign _soft_page = '' -%}
+    {%- assign _soft_page = site.pages | where: 'layout', 'soft' | where: 'code', soft | first -%}
+
+    <div class="tag">
+        {% if _soft_page.title and _soft_page.title != '' %}
+        <a href="{{ _soft_page.url | relative_url }}">
+            {{ _soft_page.title }}
+        </a>
+        {% else %}
+        <a href="{{ '/' | relative_url }}#software_{{soft}}">
+            {{ soft | escape}}
+        </a>
+        {% endif %}
+
+    </div>
+    <div>|</div>
+    {% endfor %}
+
+</div>

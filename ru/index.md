@@ -1,3 +1,4 @@
 ---
+layout: redirect
+destination: /wiki/
 ---
-

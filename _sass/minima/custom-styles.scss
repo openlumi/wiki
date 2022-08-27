@@ -3,3 +3,16 @@
 .edit-page {
   float: right;
 }
+
+
+.footer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .tag {
+    padding: 0 30px;
+    border-bottom: 1px;
+  }
+
+}
