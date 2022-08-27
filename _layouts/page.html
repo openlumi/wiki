@@ -4,8 +4,12 @@ layout: default
 <article class="post">
 
     <div>
-        <a class="edit-page" href="https://github.com/openlumi/wiki/edit/gh-pages/{{ page.path }}" target="_blank">Edit
+
+
+        {% if site.minima.edit_base_path %}
+        <a class="edit-page" href="https://github.com/{{site.minima.edit_base_path}}{{ page.path }}" target="_blank">Edit
             this page</a>
+        {% endif %}
         {% capture toc %}{% include toc.html html=content h_min=2 %}{% endcapture %}
         {% assign toc = toc | strip %}
         {% if toc != ""  %}
