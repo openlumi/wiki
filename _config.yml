@@ -28,6 +28,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 # Build settings
 minima:
   edit_base_path: openlumi/wiki/edit/gh-pages/
+  search_path: /wiki/search.html
   social_links:
     telegram: xiaomi_gw_hack
     github: openlumi

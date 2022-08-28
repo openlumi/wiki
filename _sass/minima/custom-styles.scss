@@ -17,3 +17,41 @@
   }
 
 }
+.search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.search-wrapper svg {
+  fill: #637282;
+  height: 24px;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+}
+.search-wrapper .search {
+  padding-right: 36px;
+}
+.full-width {
+  box-sizing: border-box;
+  width: 100%;
+}
+input, textarea, .select select {
+  background: #FFF;
+  border: 1px solid #c1c7cd;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 6px 12px;
+  transition-property: border;
+  transition-duration: .2s;
+}
+input, textarea, select {
+  box-shadow: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
