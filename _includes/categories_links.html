@@ -11,7 +11,18 @@
     </h3>
 {% endif %}
 <ul>
-    {%- assign pages = site.pages | where: 'layout', 'page' | sort: "title" -%}
+    {%- assign pages = site.pages | where: 'layout', 'page' | sort: "order"  | reverse  -%}
+
+    {% assign grouped = pages | group_by: 'order' %}
+    {% for item in grouped %}
+    {% assign sorted = item['items'] | sort: 'title' %}
+    {% if forloop.first %}
+    {% assign pages = sorted %}
+    {% else %}
+    {% assign pages = pages | concat: sorted %}
+    {% endif %}
+    {% endfor %}
+
     {%- for page in pages -%}
     {% if page.categories contains category %}
     <li><a class="page-link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a></li>
