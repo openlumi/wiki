@@ -55,3 +55,7 @@ input, textarea, select {
   font-size: inherit;
   line-height: inherit;
 }
+
+summary {
+    cursor: pointer;
+}
