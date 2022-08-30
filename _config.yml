@@ -43,7 +43,7 @@ remote_theme: openlumi/wiki
 
 markdown: CommonMarkGhPages
 commonmark:
-  options: ["SMART", "FOOTNOTES"]
+  options: ["UNSAFE", "SMART", "FOOTNOTES"]
   extensions: ["strikethrough", "autolink", "tables"]
 
 plugins:
