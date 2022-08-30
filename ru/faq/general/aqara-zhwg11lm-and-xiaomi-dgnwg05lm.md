@@ -59,6 +59,6 @@ categories:
 
 
 ## Статьи
-* [Шлюз Aqara Hub, взаимодействие устройств в экосистеме умного дома Xiaomi](https://www.ixbt.com/live/chome/shlyuz-aqara-hub-vzaimodeystvie-ustroystv-v-ekosisteme-umnogo-doma-xiaomi.
+* [Шлюз Aqara Hub, взаимодействие устройств в экосистеме умного дома Xiaomi](https://www.ixbt.com/live/chome/shlyuz-aqara-hub-vzaimodeystvie-ustroystv-v-ekosisteme-umnogo-doma-xiaomi.html)
 * [BLE шлюз из Xiaomi Gateway DGNWG05LM](https://habr.com/ru/post/549058/)
 
