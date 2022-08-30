@@ -11,7 +11,7 @@
     </h3>
 {% endif %}
 <ul>
-    {%- assign pages = site.pages | where: 'layout', 'page' | sort: "order"  | reverse  -%}
+    {%- assign pages = site.pages | sort: "order"  | reverse  -%}
 
     {% assign grouped = pages | group_by: 'order' %}
     {% for item in grouped %}
