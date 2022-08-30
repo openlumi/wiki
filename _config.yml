@@ -20,11 +20,17 @@
 
 title: "OpenLumi wiki | Xiaomi DGNWG05LM | Aqara ZHWG11LM"
 email:
-description: ""
+description: "OpenLumi wiki | Xiaomi DGNWG05LM | Aqara ZHWG11LM"
+
 
 baseurl: "/wiki" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: "/image/o-wiki.png"
 # Build settings
 minima:
   edit_base_path: openlumi/wiki/edit/gh-pages/
