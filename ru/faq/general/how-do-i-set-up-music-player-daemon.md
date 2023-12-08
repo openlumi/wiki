@@ -25,8 +25,12 @@ wget https://raw.githubusercontent.com/DivanX10/Openwrt-scripts-for-gateway-zhwg
 
 **Установить пакет mpd-full через LuCI. Делаем как на скриншоте**
 1. Обновить список пакетов
-1. В поиске ввести mpd-full
-1. Установить найденный пакет mpd-full
+2. В поиске ввести mpd-full
+3. Установить найденный пакет mpd-full
+4. Добавить пользователя `mpd` в группу `pulse`: 
+   ```sh
+   sed -i 's/\(pulse.*\)/\1,mpd/' /etc/group
+   ```
 
 ![MPD](https://github.com/DivanX10/Openwrt-scripts-for-gateway-zhwg11lm/blob/main/image/install%20full-mpd.jpg)
 
